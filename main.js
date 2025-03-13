@@ -1,12 +1,10 @@
 import {find, search, save, edit, remove} from "./api.js";
 
 const obj = {
-    name: "Darien",
-    lastname: "Carvajal",
-    age: 17,
-    email: "darienc@gmail.com",
-    rol: ["user", "admin"]
+    email: "dariencarvajal27@gmail.com",
+
+    id: 1
 }
 
-const message = await save(obj);
+const message = await edit(obj);
 console.log(message);
