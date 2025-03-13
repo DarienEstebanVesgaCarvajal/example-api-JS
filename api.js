@@ -6,6 +6,10 @@ export const find = async()=>{
 
 }
 export const search = async(id)=>{
+    const url = new URL("https://67d2f8338bca322cc268a97a.mockapi.io/")
+    url.pathname += `info/${id}`
+    const answer = await fetch(url.toString(), {method: "get"})
+    return await answer.json();
 
 }
 export const save = ()=>{
